@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.5;
+}
+body {
+  background-color: aliceblue;
+}
+main {
+    background-color: azure;
+}
+header h1 {
+  font-family: 'VT323', monospace;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(10px 10px 3px rgb(160, 0, 210));
+}
+.author p {
+  filter: drop-shadow(10px 10px 3px rgba(17, 15, 17, 0.8));
+  font-weight: bold;
+  text-align: right;
+  color: rgba(49, 46, 43, 0.6);
+  opacity: 0.7;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  
+  list-style: none;
+  background-color: rgba(160, 0, 210,0.5);
+}
+
+header ul a {
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  transition: font-size 250ms, color 250ms;
+  padding: 10px 10px;
+ 
+}
+header ul a:hover {
+  color: aliceblue;
+  cursor: pointer;
+  background-color: rgb(160, 0, 210);
+  border-radius: 20px;
+}
+header ul a.active {
+  background-color: rgba(160, 0, 210, 0.5);
+  border-radius: 20px;
+  color: azure;
+}
+
+.htmlDocs {
+  text-align: center;
+  padding: 10px;
+}
+.htmlDocs h2, aside {
+  font-family: 'Roboto Mono', monospace;
+}
+.htmlDocs table {
+  border: 3px solid black;
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  
+}
+.htmlDocs table th {
+  background-color: antiquewhite;
+  border: 1px dotted black;
+  position: sticky;
+  top: 0;
+}
+
+.htmlDocs table td {
+  font-family: "Source Code Pro", monospace;
+  background-color: azure;
+  border: 1px dotted black;
+  font-size: 17px;
+  padding: 0 10px;
+}
